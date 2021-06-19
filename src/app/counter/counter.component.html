@@ -1,0 +1,17 @@
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
+
+
+
+<div class="container" [ngClass]="{'overlay': start}">
+    <h2 class="counter" *ngIf="start">{{ counter }}</h2>
+    <button>
+    <a *ngIf="!start" (click)="startCounter();">Let's Goo!!</a>
+  </button>
+    
+  </div>
+
+
+  
+
